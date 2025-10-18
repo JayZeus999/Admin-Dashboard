@@ -33,45 +33,45 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 260px 1fr;
+    grid-template-columns: var(--sidebar-w) 1fr;
     grid-template-rows: auto 1fr;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .side-bar {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
 
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-rows: 60px 1fr 10px 1fr 1fr 1fr 1fr 1fr;
-    align-items: start;
-
-    background-color: rgb(73, 127, 254);
+    background: var(--sidebar-bg);
     color: white;
+    padding: 28px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .dashboard {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-
-    display: grid;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .user-section,
 .help-section {
-    grid-column: 1 / 2;
-
-    display: grid;
-    height: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 
-.user-section {
-    grid-row: 2 / 3;
-}
-
-.help-section {
-    grid-row: 4 / 5;
+.side-bar span {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .header {
