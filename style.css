@@ -126,6 +126,24 @@ body {
     gap: 16px;
 }
 
+.buttons button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 999px;
+    box-shadow: 0 6px 12px rgba(25, 147, 214, 0.16);
+    cursor: pointer;
+}
+
+.buttons button+button {
+    margin-left: 12px;
+}
+
+.buttons button:focus {
+    outline: 3px solid rgba(25, 147, 214, 0.2);
+}
+
 
 .main-content {
     display: grid;
