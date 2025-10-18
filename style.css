@@ -58,6 +58,16 @@ body {
     gap: 12px;
 }
 
+.icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.icon-dashboard{
+    color: white;
+}
+
 .user-section,
 .help-section {
     display: flex;
@@ -182,6 +192,19 @@ body {
     color: var(--muted-text);
     font-size: 13px;
     line-height: 1.45;
+}
+
+
+.card::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    bottom: 1px;
+    width: 8px;
+    background: #ffcb47;
+    /* yellow stripe */
+    border-radius: 6px;
 }
 
 .news-update {
