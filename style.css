@@ -64,8 +64,11 @@ body {
     display: inline-block;
 }
 
-.icon-dashboard{
-    color: white;
+.icon-lg {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
 }
 
 .user-section,
@@ -136,6 +139,14 @@ body {
     gap: 16px;
 }
 
+.profile .avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+}
+
 .buttons button {
     background: var(--accent);
     color: white;
@@ -169,6 +180,10 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--gap);
+}
+
+h3{
+    
 }
 
 .card {
@@ -205,6 +220,19 @@ body {
     background: #ffcb47;
     /* yellow stripe */
     border-radius: 6px;
+}
+
+.card .actions {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.card .actions svg {
+    width: 18px;
+    height: 18px;
+    opacity: 0.9;
 }
 
 .news-update {
